@@ -10,9 +10,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Outfit:wght@300;400;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Inter:wght@400;700&family=Outfit:wght@300;400;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./src/style.css">
+    <link rel="icon" type="image/png" href="./src/assets/logo.png">
 </head>
 
 <body>
@@ -25,7 +26,9 @@
     <header class="header">
         <div class="container">
             <div class="logo">
-                <span class="logo-icon">🐟🍋</span>
+                <div class="logo-jar">
+                    <img src="./src/assets/logo.png" alt="Logo Yogur Griego Tilapia" class="logo-img">
+                </div>
                 <span class="logo-text">Yogur Griego Tilapia</span>
             </div>
             <nav class="nav">
@@ -62,9 +65,29 @@
                         <a href="#beneficios" class="btn btn-large btn-secondary">Ver beneficios</a>
                     </div>
                 </div>
-                <div class="hero-image">
-                    <img src="./src/assets/product_bottle.png" alt="Yogur Griego de Tilapia Sabor Limón"
-                        class="img-responsive floating">
+                <div class="hero-image-wrapper">
+                    <div class="hero-jar-graphic">
+                        <svg viewBox="0 0 100 120" class="jar-svg large">
+                            <!-- Jar Body -->
+                            <path
+                                d="M30 30 Q30 25 35 25 L65 25 Q70 25 70 30 L75 40 L75 95 Q75 105 65 105 L35 105 Q25 105 25 95 L25 40 Z"
+                                fill="var(--primary)" opacity="0.05" />
+                            <path
+                                d="M30 30 Q30 25 35 25 L65 25 Q70 25 70 30 L75 40 L75 95 Q75 105 65 105 L35 105 Q25 105 25 95 L25 40 Z"
+                                fill="none" stroke="var(--primary)" stroke-width="2" />
+                            <!-- Lid -->
+                            <path d="M30 15 L70 15 L72 27 L28 27 Z" fill="var(--primary)" />
+                            <!-- Label -->
+                            <rect x="32" y="55" width="36" height="25" rx="2" fill="var(--secondary)" />
+                            <path d="M40 65 L60 65 M40 72 L55 72" stroke="white" stroke-width="2" opacity="0.8" />
+                            <!-- Shine -->
+                            <path d="M32 40 Q35 40 35 50" stroke="white" stroke-width="2" opacity="0.3" fill="none" />
+                        </svg>
+                    </div>
+                    <div class="hero-image">
+                        <img src="./src/assets/product_bottle.png" alt="Yogur Griego de Tilapia Sabor Limón"
+                            class="img-responsive floating">
+                    </div>
                 </div>
             </div>
         </section>
@@ -264,7 +287,7 @@
                     </div>
                     <div class="accordion-item">
                         <div class="accordion-header">¿Hacen domicilios?</div>
-                        <div class="accordion-content">Sí, realizamos domicilios en toda la ciudad. Contáctanos por
+                        <div class="accordion-content">Sí, realizamos domicilios en toda el pueblo. Contáctanos por
                             WhatsApp para coordinar tu entrega.</div>
                     </div>
                 </div>

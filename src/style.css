@@ -41,7 +41,7 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Fraunces', serif;
     font-weight: 700;
 }
 
@@ -135,10 +135,26 @@ section {
 .logo {
     display: flex;
     align-items: center;
-    gap: 10px;
-    font-size: 1.5rem;
+    gap: 12px;
+    font-size: 1.6rem;
     font-weight: 700;
     color: var(--primary);
+    font-family: 'Fraunces', serif;
+}
+
+.logo-jar {
+    width: 48px;
+    height: 48px;
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .nav-list {
@@ -198,6 +214,17 @@ section {
     gap: 15px;
     font-size: 1.2rem;
     margin-bottom: 10px;
+}
+
+.hero-image-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-image {
+    position: relative;
+    z-index: 1;
 }
 
 .hero-cta {
@@ -544,5 +571,10 @@ section {
 
     .section-title {
         font-size: 1.8rem;
+    }
+
+    .logo-jar {
+        width: 40px;
+        height: 40px;
     }
 }
