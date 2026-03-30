@@ -2,23 +2,19 @@
 document.addEventListener('DOMContentLoaded', () => {
     // FAQ Accordion
     const accordionHeaders = document.querySelectorAll('.accordion-header');
-    
+
     accordionHeaders.forEach(header => {
         header.addEventListener('click', () => {
-            const content = header.nextElementSibling;
-            const isOpen = content.style.maxHeight;
-            
+            const item = header.parentElement;
+            const isActive = item.classList.contains('active');
+
             // Close all other items
-            document.querySelectorAll('.accordion-content').forEach(item => {
-                item.style.maxHeight = null;
-                item.style.paddingTop = '0';
-                item.style.paddingBottom = '0';
+            document.querySelectorAll('.accordion-item').forEach(otherItem => {
+                otherItem.classList.remove('active');
             });
-            
-            if (!isOpen) {
-                content.style.maxHeight = content.scrollHeight + 'px';
-                content.style.paddingTop = '20px';
-                content.style.paddingBottom = '20px';
+
+            if (!isActive) {
+                item.classList.add('active');
             }
         });
     });
